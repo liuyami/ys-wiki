@@ -1,0 +1,13 @@
+{
+    "scripts": {
+        "dev": "vuepress dev docs",
+        "build": "vuepress build docs"
+    },
+    "devDependencies": {
+        "@vuepress/plugin-active-header-links": "^1.4.0",
+        "@vuepress/plugin-back-to-top": "^1.4.0",
+        "@vuepress/plugin-medium-zoom": "^1.4.0",
+        "moment": "^2.24.0",
+        "vuepress-plugin-auto-sidebar": "^1.4.1"
+    }
+}
