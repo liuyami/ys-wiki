@@ -26,5 +26,5 @@ jobs:
         ftp-server: ftp://47.103.79.39:21
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTP用户名
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTP密码
-        git-ftp-args: --remote-root /mnt/www/wiki.yscase.com # 要部署到服务器的哪个位置（我这用的是SFTP，如果是FTP连接的话--insecure不用加）
+        git-ftp-args: --remote-root / # 要部署到服务器的哪个位置（我这用的是SFTP，如果是FTP连接的话--insecure不用加）
         local-dir: dist/ # 选择哪些文件要部署到服务器，这个选项在这里选了之后，要在.git-ftp-include中添加相应的路径
