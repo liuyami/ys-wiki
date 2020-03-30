@@ -4,9 +4,6 @@
 ## Guide
 
 ```javascript
-# 安装 VuePress
-yarn add -D vuepress
-
 # 签出本项目
 git clone git@github.com:liuyami/ys-wiki.git
 
