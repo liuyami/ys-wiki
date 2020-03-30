@@ -14,7 +14,7 @@ cd ys-wiki
 yarn install
 
 # 开始写作
-vuepress dev .
+yarn dev
 
 # 后续... (提交修改并创建 Pull requests)
 ```
