@@ -14,11 +14,11 @@
 8. 物理引擎
 9. 游戏引擎
 10. 3D 引擎
-11. 其他
+11. [工具使用](/tool/)
 
 
 ## 参与指引：
-1. Fork 本项目 （https://github.com/liuyami/ys-wiki）
+1. [Fork 本项目](https://github.com/liuyami/ys-wiki)
 2. 完善知识库
 3. 提交 Pull requests
 4. 审查通过发布
