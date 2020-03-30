@@ -19,10 +19,9 @@
 
 ## 参与指引：
 1. [Fork 本项目](https://github.com/liuyami/ys-wiki)
-2. 完善知识库
+2. 完善知识库（查看 [VuePress](https://www.vuepress.cn/) 手册）
 3. 提交 Pull requests
-4. 审查通过发布
+4. 审查代码
+5. 审查通过后会自动集成并发布
 
 ---
-
-[本项目用VuePress构建](https://www.vuepress.cn/)
