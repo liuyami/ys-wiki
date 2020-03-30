@@ -16,9 +16,6 @@ jobs:
         
     - name: Build Project # 此步骤（step）的名字
       run: yarn && yarn build # 下载依赖和构建项目
-
-    - name: List output files
-      run: ls -a dist # 显示生成的目录文件
       
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
@@ -26,5 +23,4 @@ jobs:
         ftp-server: ftp://47.103.79.39:21
         ftp-username: ${{ secrets.FTP_USERNAME }} # FTP用户名
         ftp-password: ${{ secrets.FTP_PASSWORD }} # FTP密码
-        git-ftp-args: --remote-root / # 要部署到服务器的哪个位置（我这用的是SFTP，如果是FTP连接的话--insecure不用加）
         local-dir: dist/ # 选择哪些文件要部署到服务器，这个选项在这里选了之后，要在.git-ftp-include中添加相应的路径
