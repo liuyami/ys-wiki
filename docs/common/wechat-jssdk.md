@@ -19,15 +19,17 @@
 
 
 构造方法对象参数
-- client_id：可选，默认为：语铄公众号，客户端ID，如果要使用其他公众号请先联系沟通
-- url：可选，引用微信JSSDK的页面地址，默认为：location.href
-- debug：可选，开启调试模式，默认 false
-- onSDKReady:可选，微信接口验证可用后执行的回调
-- onSDKError:可选，微信接口验证可失败执行的回调
-- title：可选，分享标题，默认网页 TITLE 标签内容
-- desc： 可选，分享描述，默认为空
-- link：可选，分享的URL，默认是引入组件的页面地址
-- imgUrl: 可选，分享图标，默认是页面 body 内第一张图
+字段名 | 类型 | 名称  | 必须 | 默认值 | 说明
+---|---|---|---|---|---
+client_id | string | 公众号ID | 否 | 9545d869-95eb-47ad-8667-98b5541d4af2 | 默认为语铄公众号
+url | string | 当前网页的URL | 否 | location.href | 
+debug | bool | 开启调试模式 | 否 | false | 
+onSDKReady | function | 签名验证成功试回调函数 | 否 | {} | 
+onSDKError | function | 签名验证失败时回调函数 | 否 | {} | 
+title | string | 分享标题 | 否 | 网页TITLE |  
+desc | string | 分享描述 | 否 | 空 |  
+link | string | 分享URL | 否 | location.href |  
+imgUrl | string | 分享图标 | 否 | body 标签内第一张图 |  
 
 ```javascript
 // 示例1 全部使用默认参数
