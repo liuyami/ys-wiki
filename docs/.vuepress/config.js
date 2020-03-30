@@ -10,7 +10,7 @@ module.exports = {
     },
     plugins: pluginConf,
     themeConfig: {
-        lastUpdated: '上次更新',
+        lastUpdated: 'Last updated at',
         repo: 'liuyami/ys-wiki',
         editLinks: true,
         editLinkText: '编辑文档！',

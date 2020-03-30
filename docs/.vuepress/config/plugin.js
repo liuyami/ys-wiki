@@ -10,7 +10,7 @@ module.exports = {
     },
 
     '@vuepress/last-updated': {
-        transformer: (timestamp) => moment(timestamp).format('LLLL')
+        transformer: (timestamp) => moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
     },
 
     "vuepress-plugin-auto-sidebar": {}
