@@ -3,6 +3,7 @@ const navConf = require('./config/nav.js');
 
 
 module.exports = {
+    theme: 'antdocs',
     title: 'YUSHUO WIKI',
     dest: 'dist',
     markdown: {
