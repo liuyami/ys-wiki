@@ -5,7 +5,7 @@
 
 ```javascript
 # 安装 VuePress
-yarn global add vuepress # 或者：npm install -g vuepress
+yarn add -D vuepress
 
 # 签出本项目
 git clone git@github.com:liuyami/ys-wiki.git
