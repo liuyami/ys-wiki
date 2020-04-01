@@ -12,7 +12,7 @@
 
 ---
 
-## 安装方法
+## 安装
 
 ### 用 CDN 方式
 ```javascript
@@ -29,7 +29,7 @@ import WechatJSSDK from 'ys-wechat-jssdk'
 
 ---
 
-## 使用 JSSDK
+## 使用
 
 
 构造方法对象参数
