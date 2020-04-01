@@ -6,18 +6,30 @@
 
 ---
 
-- JS地址：http://common.yscase.com/js/WechatJSSDK.js （支持HTTPS）
-- 示例：https://yami.h5.yscase.com/yami_share/demo.html （请在微信内打开）
+- 示例：https://yami.h5.yscase.com/yami_share/demo.html （浏览器加载，请在微信内打开）
+- 示例：https://yami.h5.yscase.com/npm/dist/ （Vue框架使用，请在微信内打开）
 - 微信JSSDK官方文档：https://developers.weixin.qq.com/doc/offiaccount/OA_Web_Apps/JS-SDK.html
-## 使用方法
 
-### 1. 引入JS文件
+---
+
+## 安装方法
+
+### 用 CDN 方式
 ```javascript
 <script src="//res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script src="//common.yscase.com/js/WechatJSSDK.js"></script>
 ```
 
-### 2. 初始化 JSSDK
+### 用 NPM 方式
+> _请注意 NPM 微信JSSDK 版本是1.4.0_
+```javascript
+yarn add ys-wechat-jssdk # 或者用 npm i ys-wechat-jssdk
+import WechatJSSDK from 'ys-wechat-jssdk'
+```
+
+---
+
+## 使用 JSSDK
 
 
 构造方法对象参数
@@ -33,13 +45,18 @@ desc | string | 分享描述 | 否 | 空 |
 link | string | 分享URL | 否 | location.href |  
 imgUrl | string | 分享图标 | 否 | body 标签内第一张图 |  
 
-```javascript
-// 示例1 全部使用默认参数
-let jssdk = new WechatJSSDK();
 
-// 实例2 使用自定义参数且后续不需要用到微信JSSDK功能
+### 使用示例1：全部使用默认值 
+
+```javascript
+let jssdk = new WechatJSSDK();
+```
+
+### 使用示例2：自定义参数
+```
+// 示例2 使用自定义参数且后续不需要用到微信JSSDK功能
 new WechatJSSDK({
-    client_id: '1dfcc42c-f073-40e6-9311-1466319d7d4d', //有礼小生公众号
+    client_id: '1dfcc42c-f073-40e6-9311-1466319d7d4d',
     url: 'https://yami.h5.yscase.com/yami_share/demo.html',
     debug: true,
     onSDKReady: function(){
