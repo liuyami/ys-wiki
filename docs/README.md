@@ -10,7 +10,7 @@
 4. [动画](/animation/)
 5. [页面交互](/page-control/)
 6. [Canvas](/canvas/)
-7. [图形图像](/image/)
+7. [图形图像](/graphic/)
 8. [物理引擎](/physics-engine/)
 9. [游戏引擎](/game-engine/)
 10. [3D 引擎](/3d-engine/)
