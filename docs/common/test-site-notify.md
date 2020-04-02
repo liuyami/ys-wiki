@@ -1,12 +1,24 @@
-# 测试网站通知条
+# 测试站点通知条使用说明
 
-> 本组件由 Yue Jiajia 开发
+## 用 **NPM** 方式
 
-## 1.使用方法
+### 安装
 
-使用时需要引入 //cdn.yscase.com/common/test-notify-bar.min.js 文件，有两种引用方式：
+```javascript
+yarn add ys-test-notify-bar # 或者用 npm i ys-test-notify-bar
+import Notify from 'ys-test-notify-bar';
+```
 
-（1）放在head部分，需要引用下面的js代码
+
+
+## 用**CDN**方式
+
+### 安装
+
+使用时需要引入 `//cdn.yscase.com/common/test-notify-bar.min.js` 文件，有两种引用方式：
+
+（1）放在`<head>`部分，需要引用下面的js代码
+
 ```js
 <script>
     ;(function() {
@@ -18,23 +30,56 @@
 </script>
 ```
 
-（2）或者在body标签内引入js文件
+（2）或者在`<body>`标签内引入js文件
+
 ```js
 <script src="//cdn.yscase.com/common/test-notify-bar.min.js"></script>
 ```
-## 2.src参数设置方式
-
-参数名：
-
-- alpha  透明度
 
 
-- position  位置     可选位置：left-top、left-bottom（默认）、right-top、right-bottom
+## 使用
+
+### 参数设置
+
+| 参数名   | 类型   | 是否必填 | 默认值                 | 描述                                                         |
+| -------- | ------ | -------- | ---------------------- | ------------------------------------------------------------ |
+| position | String | 可选     | left-bottom            | 位置，可选位置：left-top、left-bottom、right-top、right-bottom |
+| alpha    | Number | 可选     | 0.6                    | 透明度，范围0-1                                              |
+| text     | String | 可选     | 测试网站，数据一律无效 | 文案                                                         |
 
 
-- text  文案
+
+**NPM使用方式**
+
+使用实例1：全部使用默认值
+
+```
+new Notify();
+```
+
+使用实例2：自定义参数
+
+```
+new Notify({
+    position:'right-top', //位置，可选
+    alpha:0.8, //透明度，可选
+    text:'测试测试测试' //文本，可选
+});
+```
 
 
-参数之间使用&符隔开,其中文案部分不可以包含%符号
 
-例如：*//cdn.yscase.com/common/test-notify-bar.min.js?position=left-top&text=测试测试&alpha=0.3*
+**CDN使用方式**
+
+例如：
+
+```
+<script src="//cdn.yscase.com/common/test-notify-bar.min.js?position=left-top&text=测试测试&alpha=0.3"></script>
+```
+
+
+
+## 注意事项
+
+CDN方式中参数之间使用&符隔开,其中文案部分不可以包含%符号
+
