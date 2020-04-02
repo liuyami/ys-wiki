@@ -20,7 +20,7 @@ yarn add ys-sound-play # 或 npm i ys-sound-play --save
 import SoundPlay from 'ys-sound-play'
 ```
 
-## new SoundPlay(params)
+## 构造方法 new SoundPlay(params)
 
 ------
 
