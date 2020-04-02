@@ -4,7 +4,21 @@
 
 该库适用于H5中播放音频，满足绝大多数H5音频播放场景。
 
-**注意 : 使用时需先引入 //common.yscase.com/js/soundplay.js 文件 (支持http和https)**
+
+## 安装
+
+* ### 使用CDN 方式
+
+```html
+<script src="//common.yscase.com/js/soundplay.js"></script>
+```
+
+* ### 使用NPM方式
+
+```html
+yarn add ys-sound-play # 或 npm i ys-sound-play --save
+import SoundPlay from 'ys-sound-play'
+```
 
 ## new SoundPlay(params)
 
