@@ -1,5 +1,9 @@
 # 教程列表
 
+## Javascript 
+- [第三方资源](./js/third-party-libraries.md)
+
+
 ## Vue 相关
 - [在 Vue.js 中使用第三方库](./vue/vue-js-libraries-plugins.md)
 
