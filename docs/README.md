@@ -14,7 +14,7 @@
 8. [物理引擎](/physics-engine/)
 9. [游戏引擎](/game-engine/)
 10. [3D 引擎](/3d-engine/)
-11. [教程](/tutorial/)
+11. [技术资源](/tech/)
 
 ---
 

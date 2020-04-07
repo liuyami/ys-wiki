@@ -1,6 +1,6 @@
-# 教程列表
+# 资源列表
 
-## Javascript 
+## Javascript 相关
 - [第三方资源](./js/third-party-libraries.md)
 
 
