@@ -2,6 +2,7 @@
 
 ## Javascript 相关
 - [第三方资源](./js/third-party-libraries.md)
+- [NPM 使用未发布的包](./js/npm-package.md)
 
 
 ## Vue 相关
