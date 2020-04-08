@@ -2,7 +2,10 @@
 
 ## Javascript 相关
 - [第三方资源](./js/third-party-libraries.md)
+- [YARN & NPM 常用命令对照表](./js/yarn-npm.md)
 - [NPM 使用未发布的包](./js/npm-package.md)
+- [前端模块详解](https://github.com/ljianshu/Blog/issues/48)
+- [前端工程师的自我修养-关于 Babel 那些事儿](https://juejin.im/post/5e5b488af265da574112089f)
 
 
 ## Vue 相关
