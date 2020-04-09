@@ -1,19 +1,19 @@
 # 动画
 
-## TweenMax
+# TweenMax
 
-### 介绍
+## 介绍
 
 **TweenMax** 是由GreenSock 动画平台(GSAP) 创作的，可用来构建补间动画(tween)。
 
-#### 补间动画
+### 补间动画
 
 在介绍**TweenMax**之前，我们需要了解`补间动画`是什么。
 
 `补间动画` ：补间动画指的是做FLASH动画时，在两个关键帧中间需要做“补间动画”，才能实现图画的运动。简单来说就是你给定一个`起始帧`和一个`结束帧`，中间的`插补帧`由计算机来运算实现。    
 举个栗子 :hand: ：想让一个元素从起始帧 `{x : 0, y : 0}`  的位置移动到结束帧 `{x : 100, y : 100}` 的位置，我们只需要将元素的起点位置和结束位置定义好，计算机会自动补全中间过程，这种便叫做补间动画。
 
-#### 补间动画库
+### 补间动画库
 
 市面上有不少优秀的补间动画库，**TweenMax** 、**tween.JS** 、**anime.JS** ......，而 **TweenMax** 是使用最为广泛的动画库，它拥有丰富的插件，并且具有很好的浏览器兼容性，因此，这里主要对 **TweenMax** 进行讲解。
 
@@ -21,7 +21,7 @@
 
 
 
-### 兼容性
+## 兼容性
 
 - TweenMax 的核心功能兼容**各种新旧浏览器、移动设备**等。
 
@@ -51,7 +51,7 @@
 
 
 
-### 使用方法
+## 使用方法
 
 1. 获取TweenMax的JS包
 
@@ -153,15 +153,15 @@
 
 
 
-### TweenMax.JS API
+## TweenMax.JS API
 
 以下内容都是基于`TweenMax.min.js` 
 
 
 
-#### 动画结构
+### 动画结构
 
-##### TweenMax()
+#### TweenMax()
 
 ```js
 .TweenMax( target:Object, duration:Number, vars:Object ) ;
@@ -200,7 +200,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### TweenMax.to()
+#### TweenMax.to()
 
 ```js
 TweenMax.to( target:Object, duration:Number, vars:Object )
@@ -261,7 +261,7 @@ var myTween = TweenMax.to(".box", 1, {
 
 
 
-##### TweenMax.from()
+#### TweenMax.from()
 
 ```js
 TweenMax.from( target:Object, duration:Number, vars:Object )
@@ -311,7 +311,7 @@ var myTween = TweenMax.from(".box", 3, {
 
 
 
-##### TweenMax.fromTo()
+#### TweenMax.fromTo()
 
 ````js
 TweenMax.fromTo( target:Object, duration:Number, fromVars:Object, toVars:Object )
@@ -351,7 +351,7 @@ var myTween=TweenMax.fromTo('.box', 3, {x: 200,},{x: 500,});
 
 
 
-##### TweenMax.staggerTo()
+#### TweenMax.staggerTo()
 
 ```js
 TweenMax.staggerTo( targets:Array, duration:Number, vars:Object, stagger:Number, onCompleteAll:Function, onCompleteAllParams:Array, onCompleteAllScope:* )
@@ -410,7 +410,7 @@ TweenMax.staggerTo(".box", 1, {rotation:360, y:100}, 0.5);
 
 
 
-##### TweenMax.staggerFrom()
+#### TweenMax.staggerFrom()
 
 ````js
 TweenMax.staggerFrom( targets:Array, duration:Number, vars:Object, stagger:Number, onCompleteAll:Function, onCompleteAllParams:Array, onCompleteAllScope:* )
@@ -467,7 +467,7 @@ TweenMax.staggerFrom(".box", 1, {
 
 
 
-##### TweenMax.staggerFromTo()
+#### TweenMax.staggerFromTo()
 
 ```js
 TweenMax.staggerFromTo( targets:Array, duration:Number, fromVars:Object, toVars:Object, stagger:Number, onCompleteAll:Function, onCompleteAllParams:Array, onCompleteAllScope:* )
@@ -530,7 +530,7 @@ TweenMax.staggerFromTo(".box", 1, {
 
 
 
-##### TweenMax.delayedCall()
+#### TweenMax.delayedCall()
 
 ```js
 TweenMax.delayedCall( delay:Number, callback:Function, params:Array, scope:*, useFrames:Boolean )
@@ -582,7 +582,7 @@ function myFunction(param1, param2) {
 
 
 
-##### TweenMax.set()
+#### TweenMax.set()
 
 ```js
 TweenMax.set( target:Object, vars:Object )
@@ -636,9 +636,9 @@ TweenMax.set([obj1, obj2, obj3], {x:100, y:50, opacity:0});
 
 
 
-#### 动画初始设置(动画属性)
+### 动画初始设置(动画属性)
 
-##### delay(延迟)
+#### delay(延迟)
 
 ```js
 delay:Number
@@ -669,7 +669,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### ease(速度曲线)
+#### ease(速度曲线)
 
 ```js
 ease: Ease (or Function or String)
@@ -707,7 +707,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### paused(暂停)
+#### paused(暂停)
 
 ````js
 paused: Boolean
@@ -745,7 +745,7 @@ playBtn.onclick = function() {
 
 
 
-##### immediateRender(立即渲染)
+#### immediateRender(立即渲染)
 
 ```js
 immediateRender:Boolean
@@ -785,7 +785,7 @@ TweenMax.from('.orange', 3, {
 
 
 
-##### overwrite(重叠)
+#### overwrite(重叠)
 
 ```js
 overwrite: String (or int)
@@ -832,7 +832,7 @@ TweenMax.to('.box', 3, {x: 200,overwrite:2});
 
 
 
-##### useFrames(刷帧)
+#### useFrames(刷帧)
 
 ```js
 useFrames: Boolean
@@ -865,7 +865,7 @@ myTween=TweenMax.to('.box', 100, {x:500,useFrames:true,});
 
 
 
-##### repeat(重复)
+#### repeat(重复)
 
 ```js
 repeat: Number
@@ -896,7 +896,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### repeatDelay(重复延迟)
+#### repeatDelay(重复延迟)
 
 ```js
 repeatDelay: Number
@@ -929,7 +929,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### yoyo(溜溜球)
+#### yoyo(溜溜球)
 
 ```js
 yoyo: Boolean
@@ -960,7 +960,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### yoyoEase(往返速度曲线)
+#### yoyoEase(往返速度曲线)
 
 ```js
 yoyoEase: Ease | Boolean
@@ -1002,7 +1002,7 @@ new TweenMax('.orange', 3, {
 
 
 
-##### startAt(开始于)
+#### startAt(开始于)
 
 ```js
 startAt: Object
@@ -1033,7 +1033,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### cycle(整套)
+#### cycle(整套)
 
 ```js
 cycle: Object
@@ -1087,9 +1087,9 @@ myTween = TweenMax.staggerTo(".box", 1, {
 
 
 
-#### 动画事件
+### 动画事件
 
-##### onComplete	
+#### onComplete	
 
 ```js
 onComplete: Function
@@ -1135,7 +1135,7 @@ TweenMax.to('.box', 2, {
 
 
 
-##### onCompleteParams
+#### onCompleteParams
 
 ```js
 onCompleteParams: Array
@@ -1187,7 +1187,7 @@ function myFunction(param1,param2){
 
 
 
-##### onCompleteScope
+#### onCompleteScope
 
 ```js
 onCompleteScope: Object
@@ -1206,7 +1206,7 @@ TweenMax.to(mc, 1, {
 
 
 
-##### onReverseComplete
+#### onReverseComplete
 
 ```js
 onReverseComplete: Function
@@ -1255,7 +1255,7 @@ reverseBtn.onclick = function() {
 
 
 
-##### onReverseCompleteParams
+#### onReverseCompleteParams
 
 ```js
 onReverseCompleteParams: Array
@@ -1312,7 +1312,7 @@ reverseBtn.onclick = function() {
 
 
 
-##### onReverseCompleteScope
+#### onReverseCompleteScope
 
 ```js
 onReverseCompleteScope: Object
@@ -1331,7 +1331,7 @@ TweenMax.to(mc, 1, {
 
 
 
-##### onStart
+#### onStart
 
 ```js
 onStart: Function
@@ -1383,7 +1383,7 @@ restartBtn.onclick = function() {tween.restart();}
 
 
 
-##### onStartParams
+#### onStartParams
 
 ```js
 onStartParams: Array
@@ -1438,7 +1438,7 @@ function myFunction(param1,param2){
 
 
 
-##### onStartScope
+#### onStartScope
 
 ```js
 onStartScope: Object
@@ -1457,7 +1457,7 @@ TweenMax.to(mc, 1, {
 
 
 
-##### onUpdate
+#### onUpdate
 
 ```js
 onUpdate: Function
@@ -1501,7 +1501,7 @@ new TweenMax('.box', 3, {
 
 
 
-##### onUpdateParams
+#### onUpdateParams
 
 ```js
 onUpdateParams: Array
@@ -1527,7 +1527,7 @@ onUpdateParams:["{self}", "param2"]
 
 
 
-##### onUpdateScope
+#### onUpdateScope
 
 ```js
 onUpdateScope: Object
@@ -1546,7 +1546,7 @@ TweenMax.to(mc, 1, {
 
 
 
-##### onOverwrite
+#### onOverwrite
 
 ```js
 onOverwrite: Function
@@ -1606,7 +1606,7 @@ function myFunction(overwrittenTween,overwritingTween,target,overwrittenProperti
 
 
 
-##### onRepeat
+#### onRepeat
 
 ```js
 onRepeat: Function
@@ -1656,7 +1656,7 @@ var tween = new TweenMax('.box', 3, {
 
 
 
-##### onRepeatParams
+#### onRepeatParams
 
 ```js
 onRepeatParams: Array
@@ -1711,7 +1711,7 @@ function myFunction(param1,param2){
 
 
 
-##### onRepeatScope
+#### onRepeatScope
 
 ```js
 onRepeatScope: Object
@@ -1730,7 +1730,7 @@ TweenMax.to(mc, 1, {
 
 
 
-##### .eventCallback()
+#### .eventCallback()
 
 ```js
 .eventCallback( type:String, callback:Function, params:Array, scope:* )
