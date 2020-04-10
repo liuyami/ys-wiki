@@ -15,4 +15,8 @@
 - [前端网页视频处理攻略](./media/video.md)
 - [前端音频处理压缩攻略](./media/audio.md)
 
+## 微信相关
+- [企业公司申请微信公众号、小程序所需资料](./wechat/register.md)
+- [小程序开发所需资源](./wechat/mini-app-program-development-resource.md)
+- [订阅号、服务号权限、功能列表](https://kf.qq.com/faq/170104AJ3y26170104Yj673y.html)
 

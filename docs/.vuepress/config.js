@@ -14,7 +14,7 @@ module.exports = {
         lastUpdated: 'Last updated at',
         repo: 'liuyami/ys-wiki',
         editLinks: true,
-        editLinkText: '编辑文档！',
+        editLinkText: '编辑此文档！',
         docsDir: 'docs',
         nav: navConf
     },
