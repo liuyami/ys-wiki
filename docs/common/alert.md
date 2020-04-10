@@ -1,4 +1,6 @@
-# npm方式
+# 弹层使用    
+
+## 引入 npm方式
 npm安装： npm i ys-layer-jssdk
 ```javascript
 1.vue router中引入css  import 'ys-layer-jssdk/ys-layer.css'
@@ -6,11 +8,11 @@ npm安装： npm i ys-layer-jssdk
 ```
 
 
-# cdn方式
+## cdn方式
 ```javascript
 
 ```
-# 使用
+## 使用
 ## loding配置
 
 ```javascript
