@@ -1,4 +1,4 @@
-# 弹层使用    
+# 弹层插件使用    
 
 ## 引入 npm方式
 npm安装： npm i ys-layer-jssdk
