@@ -3,8 +3,8 @@
 ## 引入 npm方式
 npm安装： npm i ys-layer-jssdk
 ```javascript
-1.vue router中引入css  import 'ys-layer-jssdk/ys-layer.css'
-2.页面中引入js   import YSLayer from 'ys-layer-jssdk/ys-layer'
+import 'ys-layer-jssdk/ys-layer.css'        //vue router中引入css
+import YSLayer from 'ys-layer-jssdk/ys-layer'   //页面中引入js
 ```
 
 
