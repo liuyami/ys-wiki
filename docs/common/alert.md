@@ -1,6 +1,6 @@
 # ys-layer弹层插件使用    
 
-demo地址  h5.yscase.com/xiaoming/layer/
+demo地址  <http://h5.yscase.com/xiaoming/ysLayer>
 
 ## 引入 npm方式
 npm安装： npm i ys-layer
