@@ -1,6 +1,9 @@
-# ys-layer弹层插件使用    
+# ys-layer弹层插件使用  
 
-demo地址  <http://h5.yscase.com/xiaoming/ysLayer>
+## demo地址 
+http://h5.yscase.com/xiaoming/ysLayer
+
+
 
 ## 引入 npm方式
 npm安装： npm i ys-layer
@@ -9,10 +12,10 @@ import 'ys-layer/ys-layer.css'        		//vue router中引入css
 import YSLayer from 'ys-layer/ys-layer'     //页面中引入js
 ```
 
-
 ## cdn方式
 ```javascript
-
+//common.yscase.com/js/yslayer.css
+//common.yscase.com/js/yslayer.js
 ```
 ## 使用
 ## loading配置
@@ -34,8 +37,6 @@ ysLayerloading.fadeIn()      // 显示 接收一个Number时间参数（可选�
 ysLayerloading.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
 ysLayerloading.init(config)  // 重置config
 ```
-
-
 
 ## info单选框配置  
 
