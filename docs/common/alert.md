@@ -1,10 +1,12 @@
-# 弹层插件使用    
+# ys-layer弹层插件使用    
+
+demo地址  h5.yscase.com/xiaoming/layer/
 
 ## 引入 npm方式
-npm安装： npm i ys-layer-jssdk
+npm安装： npm i ys-layer
 ```javascript
-import 'ys-layer-jssdk/ys-layer.css'        //vue router中引入css
-import YSLayer from 'ys-layer-jssdk/ys-layer'   //页面中引入js
+import 'ys-layer/ys-layer.css'        		//vue router中引入css
+import YSLayer from 'ys-layer/ys-layer'     //页面中引入js
 ```
 
 
@@ -13,69 +15,70 @@ import YSLayer from 'ys-layer-jssdk/ys-layer'   //页面中引入js
 
 ```
 ## 使用
-## loding配置
+## loading配置
 
 ```javascript
 // loding 配置
-    var loding = {
-      type: 'loding',  			//必须 类型String  loding
+    var loading = {
+      type: 'loading',  		//必须 类型String  loading
       config: {
-        // url: '',			    //可选 loding图片  提示！！！传空字符串 默认图不显示
+        // url: '',			    //可选 loading图片  提示！！！传空字符串 默认图不显示
         txt: '',  				//可选 默认为空  提示文字
-        isClickHide: true, 		//可选  默认false  点击隐藏loding
+        isClickHide: true, 		//可选  默认false  点击隐藏loading
       }
     };
 
-var ysLayerLoding = new YSLayer(loding);
+var ysLayerloading = new YsLayer(loading);
 //方法
-ysLayerLoding.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
-ysLayerLoding.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
-ysLayerLoding.init(config)  // 重置config
+ysLayerloading.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
+ysLayerloading.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
+ysLayerloading.init(config)  // 重置config
 ```
 
 
 
-## information单选框配置  
+## info单选框配置  
 
 ```javascript
-var information = {
-      type: 'information',  				//必须 类型String  接收 information
+var info = {
+      type: 'info',  						//必须 类型String  接收 info
       config: {
         txt: '确定关闭当前页面？',			  //必须  说明文字
         btn: '确定按钮',					 //必须  按钮
         success: function () {				//必须  回调函数
-          ysLayerInformation.fadeOut()
+          ysLayerinfo.fadeOut()
         }
       }
     };
 
-var ysLayerInformation = new YSLayer(information);
+var ysLayerinfo = new YsLayer(info);
 //方法
-ysLayerInformation.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
-ysLayerInformation.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
-ysLayerInformation.init(config)  // 重置config
+ysLayerinfo.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
+ysLayerinfo.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
+ysLayerinfo.init(config)  // 重置config
 
 ```
 
-## inquiry询问框对话
+## confirm询问框对话
 
 ```javascript
-var inquiry = {
-      type: 'inquiry',						//必须 类型String  接收 inquiry
+var confirm = {
+      type: 'confirm',						//必须 类型String  接收 confirm
       config: {
         txt: '是否关闭这个内容？',        	  //必须 类型String 
         btns: ['确定', '取消'],   	 	     //必须 Array
         success: function () {              //必须 确定按钮回调
-          ysLayerInquiry.fadeOut()
+          ysLayerconfirm.fadeOut()
         },
         error: function () {		        //必须 取消按钮回调
-          ysLayerInquiry.fadeOut()
+          ysLayerconfirm.fadeOut()
         }
       }
     }
 
-var ysLayerInquiry = new YSLayer(inquiry);
-ysLayerInquiry.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
-ysLayerInquiry.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
-ysLayerInquiry.init(config)  // 重置config
+var ysLayerconfirm = new YsLayer(confirm);
+
+ysLayerconfirm.fadeIn()      // 显示 接收一个Number时间参数（可选）  默认400 
+ysLayerconfirm.fadeOut()     // 隐藏 接收一个Number时间参数（可选）  默认400 
+ysLayerconfirm.init(config)  // 重置config
 ```
