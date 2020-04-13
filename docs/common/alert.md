@@ -1,7 +1,7 @@
 # ys-layer弹层插件使用  
 
 ## demo地址
-- [demo地址](https://github.com/ljianshu/Blog/issues/48)(http://h5.yscase.com/xiaoming/ysLayer)
+- (https://github.com/ljianshu/Blog/issues/48)(http://h5.yscase.com/xiaoming/ysLayer)
 
 
 ## 引入 npm方式
