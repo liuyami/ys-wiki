@@ -13,9 +13,9 @@ import YSLayer from 'ys-layer/ys-layer'     //页面中引入js
 ```
 
 ## cdn方式
-```javascript
-//common.yscase.com/js/yslayer.css
-//common.yscase.com/js/yslayer.js
+```html
+<link rel="stylesheet" href="//common.yscase.com/js/yslayer.css">
+<script src="//common.yscase.com/js/yslayer.js"></script>
 ```
 ## 使用
 ## loading配置
